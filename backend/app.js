@@ -28,7 +28,7 @@ app.use((error ,req, res, next) => {
 })
 
 mongoose
-    .connect('mongodb+srv://momo123:e2Cg1nVGodWMFmfk@photo-sharing-app-wvmk3.mongodb.net/places?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
+    .connect('mongodb+srv://momo123:e2Cg1nVGodWMFmfk@photo-sharing-app-wvmk3.mongodb.net/places?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true,useCreateIndex: true })
     .then(() => {
         app.listen(5000);
     })
